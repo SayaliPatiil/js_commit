@@ -55,6 +55,11 @@ window.ls.container
         }
 
         window.getSelection().removeAllRanges();
+        
+        
+        
+        
+        
       });
 
       element.parentNode.parentNode.appendChild(copy);
