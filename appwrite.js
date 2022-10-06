@@ -111,9 +111,7 @@
                 lastMessage: undefined,
                 connect: () => {
                     clearTimeout(this.realtime.timeout);
-                    this.realtime.timeout = window === null || window === void 0 ? void 0 : window.setTimeout(() => {
-                        this.realtime.createSocket();
-                    }, 50);
+                    
                 },
                 getTimeout: () => {
                     switch (true) {
@@ -125,6 +123,9 @@
                             return 10000;
                         default:
                             return 60000;
+                            this.realtime.timeout = window === null || window === void 0 ? void 0 : window.setTimeout(() => {
+                        this.realtime.createSocket();
+                    }, 50);
                     }
                 },
                 createSocket: () => {
