@@ -24,13 +24,13 @@ sources:
     - 'demosubproject'
 
 #Specify modules you would like to enable or disable.
-modules:
-    - name: eslint
-      enabled: true
-      rules:
-         - key: 'ESLINT-JS-63'
-           enabled: false
-    - name: pmd
-      enabled: false
+#modules:
+#    - name: eslint
+#      enabled: true
+#      rules:
+#         - key: 'ESLINT-JS-63'
+#           enabled: false
+#    - name: pmd
+#     enabled: false
 
 ## Please visit https://docs.embold.io/v2-quick-start-guide/#update-configurations to know more
